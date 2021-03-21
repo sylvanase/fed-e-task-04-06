@@ -1,0 +1,10 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/">Angular Todo List</a>
+    </div>
+  </div>
+</nav>
+<div [@routerAnimation]="prepare(outlet)" class="routerContainer">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

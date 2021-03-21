@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="form-group" style="padding-left: 40px;margin-bottom: 10px;">
+    <input (keyup.enter)="onSubmit(input)" #input type="text" class="form-control" placeholder="add todos" />
+    <!-- <button style="margin-left: 10px;" type="button" class="btn btn-default" (click)="onSubmit(input)">添加</button> -->
+  </div>
+
+  <ul>
+    <li *ngFor="let item of list;let i = index" class="list-group-item">
+      {{item.name}}<button style="margin-left: 10px;" class="btn btn-default" (click)="removeContact(i)">删除</button>
+    </li>
+  </ul>
+</div>
